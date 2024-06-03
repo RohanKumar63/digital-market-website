@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bs-dark-primary: black;
+   --bs-upperhead: #FF3147;
+   
+}
+
+h2{
+    font-size: 45px;
+}
+p
+{
+    font-size: 16px;
+}
+
+h4{
+    color: var(--bs-upperhead);
+    font-size: 24px;
+    
+}
+.container .h1
+{
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.row h1{
+    font-size: 50px;
+}
+/* hero section */
+
+
+.hero-section .container{
+    display: grid;
+    place-content: center;
+    height: inherit;
+}
+.bg-main
+{
+    height: 90vh;
+    position: relative;
+}
+
+.imgr{
+    margin-top: 100px;
+}
+.hero-img--section{
+
+    width: 400px;
+    height: 600px;
+  
+
+}
+
+.what-we-do{
+    margin-top: 100px;
+    padding-bottom: 100px;
+    hight: 100vh;
+    position: relative;
+    background-color: #FAFAFA;
+
+}
+.row{
+    padding-top: 50px  ;
+}
+.row p{
+    font-size: 16px;
+}
+
+
+.what-we-do h1{
+    font-size: 45px;
+    
+}
+
+.carousel-inner .cardb{
+    background-color: #F6F6F6;
+    color: #FF3147;
+}
+.carousel-inner .row{
+   
+   margin-right: -200px;
+
+}
+
+.carousel-indicators{
+    left: -50px;
+    bottom: -50px;
+}
+
+.carousel-indicators [data-bs-target]{
+ width: 10px;
+ height: 10px;
+ background-color: black;
+ border-radius: 100px;
+
+}
+.why-choose-us {
+    margin-top: 100px;
+}
+h5{
+    font-size: 20px;
+}
+
+.carousel-inner .card-img{
+    width: 57px;
+height: 57px;
+}
+
+.carousel-inner button{
+    width: 185px;
+height: 50px; 
+border-radius: 2px;
+}
+
+
+.Our-project{
+    margin-top: 100px;
+}
+ .cc
+{
+    padding: 20px 20px;
+background-color: #F6F6F6;
+}
+.box-1{
+    padding:20px 20px ;
+
+}
+.box-2
+{
+    padding:20px 20px ;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: -20px  ;
+    margin-right: -20px;
+}
+.box-3
+{
+    padding:20px 20px ;
+}
+
+/* expert-growts */
+
+.expert-growts{
+    margin-top: 100px;
+}
+.expert-growts .row{
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.column {
+    float: left;
+    width: 25%;
+    padding: 0 5px;
+}
+
+.row {
+    margin: 0 -5px;
+}
+
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform:translate(-10px)
+}
+
+.fa {
+    font-size: 50px;
+}
+
+
+.hh{
+    margin-left:-170px ;
+}
+.ff{
+    margin-top:100px ;
+    width: 100%;
+    height: 30vh;
+    background-color: #FF3147;
+    
+}
+.ff img{
+    padding: 100px 50px 50px 50px;
+}
+
+/* popup form */
+
+.contact-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+.contact-form h2 {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group input[type="email"],
+.form-group input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-group input[type="text"] {
+    width: calc(50% - 10px);
+    margin-right: 10px;
+}
+
+.form-group input[type="text"]:last-child {
+    margin-right: 0;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+button {
+    background-color: #ff3366;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #e62e5c;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
